@@ -55,11 +55,11 @@ body {
   box-sizing: border-box;
   background-color: #F3444D;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 header {
   position: relative;
+  overflow: hidden;
 }
 
 .section__inicio {
@@ -68,7 +68,6 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  position: absolute;
   justify-content: flex-start;
 }
 .section__inicio .container__inicio {
@@ -110,10 +109,12 @@ header {
   text-shadow: -3px 4px black;
   font-family: "Lemon Milk";
   color: white;
+  width: 85%;
+  text-align: left;
 }
 .section__inicio .container__inicio .container__speach .speach__title .comillas {
   position: absolute;
-  left: 4%;
+  left: 0%;
   top: -25%;
 }
 .section__inicio .container__inicio .container__speach .speach__title .star {
@@ -172,7 +173,13 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  margin-left: 10%;
+  right: -10%;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
 }
 
 .section__quienSoy {
@@ -181,6 +188,105 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  background-image: url("../assets/img/background orange.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start;
+}
+.section__quienSoy .container__quienSoy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section__quienSoy .container__quienSoy .container__img {
+  width: 40%;
+  height: 100%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__quienSoy .container__quienSoy .container__img img {
+  height: 36rem;
+}
+.section__quienSoy .container__quienSoy .container__speach {
+  width: 55%;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__title .title {
+  font-size: 36px;
+  line-height: 49px;
+  text-shadow: -3px 4px black;
+  font-family: "Lemon Milk";
+  color: white;
+  text-align: left;
+  width: 85%;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__title .comillas {
+  position: absolute;
+  left: 0%;
+  top: -25%;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__title .star {
+  position: absolute;
+  top: -70%;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__paragraph p {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: 32.87px;
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 90%;
+  text-align: left;
+  margin-top: 1em;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__btn .btn_border {
+  min-width: 250px;
+  border: 4px solid #00AE9E;
+  border-radius: 40px;
+  padding: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__btn .btn_saberMas {
+  padding: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  min-width: 240px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .section__experiencias {
@@ -189,6 +295,98 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  background-image: url("../assets/img/puntos naranjas.png");
+  background-repeat: no-repeat;
+  background-size: 9em;
+  justify-content: flex-start;
+  background-position: right bottom;
+  justify-content: flex-start;
+}
+.section__experiencias .container__experiencias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.section__experiencias .container__experiencias .background__experiencias {
+  background-image: url("../assets/img/lineas naranjas.png");
+  overflow: hidden;
+  background-position: left bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -20;
+  left: -7%;
+}
+.section__experiencias .container__experiencias .container__img {
+  width: 40%;
+  height: 100%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__experiencias .container__experiencias .container__img img {
+  height: 100%;
+}
+.section__experiencias .container__experiencias .container__speach {
+  width: 70%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__experiencias .container__experiencias .container__speach .speach__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  position: relative;
+  margin-top: 5em;
+}
+.section__experiencias .container__experiencias .container__speach .speach__title .title {
+  font-size: 36px;
+  line-height: 49px;
+  text-shadow: -3px 4px black;
+  font-family: "Lemon Milk";
+  color: white;
+  text-align: left;
+  width: 85%;
+}
+.section__experiencias .container__experiencias .container__speach .speach__title .comillas {
+  position: absolute;
+  right: 15%;
+  top: -50%;
+}
+.section__experiencias .container__experiencias .container__speach .speach__title .star {
+  position: absolute;
+  left: 0%;
+  top: -25%;
+}
+
+.section__testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("../assets/img/backgroundblue con puntos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__testimonios .muestra {
+  width: 100%;
+  height: 500px;
 }
 
 .section__curso {
@@ -197,14 +395,161 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  background-image: url("../assets/img/Rectangle 33.png");
+  background-repeat: no-repeat;
+  background-size: 37rem;
+  background-position: right;
 }
-
-.section__contacto {
+.section__curso .container__curso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.section__curso .container__curso .container__speach {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 40%;
+}
+.section__curso .container__curso .container__speach .speach__title {
+  width: 90%;
+  font-size: 36px;
+  line-height: 49px;
+  text-shadow: -3px 4px black;
+  font-family: "Lemon Milk";
+  color: white;
+}
+.section__curso .container__curso .container__speach .speach__paragraph {
+  width: 90%;
+}
+.section__curso .container__curso .container__speach .speach__paragraph p {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: 32.87px;
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 90%;
+  text-align: left;
+  margin-top: 1em;
+}
+.section__curso .container__curso .container__speach .speach__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.section__curso .container__curso .container__speach .speach__btn .btn_border {
+  min-width: 250px;
+  border: 4px solid #5F01D0;
+  border-radius: 40px;
+  padding: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__curso .container__curso .container__speach .speach__btn .btn_saberMas {
+  padding: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  min-width: 240px;
+  text-align: center;
+  font-weight: bold;
+}
+.section__curso .container__curso .container__speach .speach__btn .btn_saberMas img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2em;
+}
+.section__curso .container__curso .container__cards {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section__curso .container__curso .container__cards .cards {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  box-shadow: 8px 8px 1px #5F01D0;
+}
+
+footer {
   width: 100%;
+  background-image: url("../assets/img/back verde.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container__logoContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+footer .container__logoContacto img {
+  width: 20em;
+}
+footer .container__redes {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7em;
+  margin-bottom: 5em;
+}
+footer .container__redes .redes__title {
+  font-size: 36px;
+  line-height: 49px;
+  text-shadow: -3px 4px black;
+  font-family: "Lemon Milk";
+  color: white;
+  width: 100%;
+}
+footer .container__redes .redes__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .container__redes .redes__links a {
+  text-decoration: none;
+  width: 45%;
+  color: black;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+footer .container__redes .redes__links a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5em;
 }
 
 @media screen and (max-width: 991px) {
