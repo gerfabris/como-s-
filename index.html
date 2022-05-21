@@ -21,15 +21,79 @@
     <!-- Tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- Estilos-->
-    <link rel="stylesheet" href="./CSS/normalize.css">        
+    <link rel="stylesheet" href="./CSS/normalize.css">     
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
-
+        <!-- Nav Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light backgroundcolor">
+            <div class="container-fluid">
+                <!-- Contenedor Logo-->
+                <div class="container navbar__containerLogo">
+                    <a class="navbar-brand" href="#sectionInicio">
+                        <img src="./assets/img/logo como si.png" alt="Logo Como sí" class="navbar__containerLogo_img">
+                    </a>
+                </div>
+                <!-- Nav toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenedor Lista Menú-->
+                <div class="collapse navbar-collapse navbar__container__links" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__ul">
+                        <li class="nav-item">
+                            <a class="nav-link active navbar__links" aria-current="page" href="#sectionInicio">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar__links" href="#sectionQuienSoy">¿quién soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar__links" href="#sectionExperiencias">experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar__links" href="#sectionCurso">curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar__links" href="#sectionContacto">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="background__inicio"></div>
+        <section id="sectionInicio" class="section__inicio">
+            <div class="container__inicio">
+                <div class="container__img">
+                    <img src="./assets/img/Imagen HOME.png" alt="Home Como sí">
+                </div>
+                <div class="container__speach">
+                    <div class="speach__title">
+                        <img class="comillas" src="./assets/img/comillas 2.png" alt="">
+                        <h1 class="h1 title">ACA VA UN TITULO</h1>
+                        <img class="star" src="./assets/img/Star 4.png" alt="">
+                    </div>
+                    <div class="speach__paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas ab veritatis pariatur delectus iusto, aliquid ipsam vel accusamus mollitia commodi ea, laudantium tempore quod odio. Ut ducimus officiis deleniti?
+                        </p>
+                    </div>
+                    <div class="speach__btn">
+                        <div class="btn_border">
+                            <a href="" class="btn_saberMas">SABER MÁS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>    
     <main>
-
+        <section id="sectionQuienSoy" class="section__quienSoy"></section>
+        <section id="sectionExperiencias" class="section__experiencias"></section>
+        <section id="sectionCurso" class="section__curso"></section>
+        <section id="sectionContacto" class="section__contacto"></section>
     </main>
     <footer>
 

@@ -1,0 +1,41 @@
+//Paleta colores
+$color__salmon: #F3444D;
+$color__naranja: #FBAB22;
+$color__violeta: #5F01D0;
+$color__celeste: #00AE9E;
+//Tipografía
+$tipografia__principal: 'Raleway', sans-serif;
+@font-face{
+    font-family: "Lemon Milk";
+    src: url("../assets/lemon_milk/LEMONMILK-Bold.otf");
+}
+$tipografia_title: "Lemon Milk";
+//mixin
+@mixin flex_column_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin title{
+    font-size: 36px;
+    line-height: 49px;
+    text-shadow: -3px 4px black;
+    font-family: $tipografia_title;
+    color: #ffff;
+}
+@mixin p{
+    font-family: $tipografia__principal;
+    font-size: 28px;
+    line-height: 32.87px ;
+    color: white;
+    text-shadow: 1px 1px black;
+    width: 90%;
+    text-align: left;
+    margin-top: 1em;
+}

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("../assets/lemon_milk/LEMONMILK-Bold.otf");
+}
+.navbar {
+  background: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar__containerLogo {
+  width: 30%;
+  padding: 1em;
+}
+
+.navbar__containerLogo_img {
+  width: calc(5em + 5vw);
+}
+
+.navbar__container__links {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar__links {
+  background-color: white;
+  border-radius: 40px;
+  min-width: 100px;
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar__links:hover {
+  box-shadow: 0px 4px 4px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-display: swap;
+  box-sizing: border-box;
+  background-color: #F3444D;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+}
+
+.section__inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  justify-content: flex-start;
+}
+.section__inicio .container__inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: -20%;
+  margin-top: 8em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section__inicio .container__inicio .container__img {
+  width: 40%;
+  margin-top: 5%;
+}
+.section__inicio .container__inicio .container__img img {
+  width: 25em;
+}
+.section__inicio .container__inicio .container__speach {
+  width: 50%;
+  margin-left: 10%;
+}
+.section__inicio .container__inicio .container__speach .speach__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.section__inicio .container__inicio .container__speach .speach__title .title {
+  font-size: 36px;
+  line-height: 49px;
+  text-shadow: -3px 4px black;
+  font-family: "Lemon Milk";
+  color: white;
+}
+.section__inicio .container__inicio .container__speach .speach__title .comillas {
+  position: absolute;
+  left: 4%;
+  top: -25%;
+}
+.section__inicio .container__inicio .container__speach .speach__title .star {
+  position: absolute;
+  top: -70%;
+}
+.section__inicio .container__inicio .container__speach .speach__paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section__inicio .container__inicio .container__speach .speach__paragraph p {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: 32.87px;
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 90%;
+  text-align: left;
+  margin-top: 1em;
+}
+.section__inicio .container__inicio .container__speach .speach__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.section__inicio .container__inicio .container__speach .speach__btn .btn_border {
+  min-width: 250px;
+  border: 4px solid #5F01D0;
+  border-radius: 40px;
+  padding: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__inicio .container__inicio .container__speach .speach__btn .btn_saberMas {
+  padding: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  min-width: 240px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.background__inicio {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img/puntos_inicio.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.section__quienSoy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section__experiencias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section__curso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section__contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar__ul {
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .nav-item {
+    min-width: 100px;
+  }
+
+  .navbar__links {
+    margin-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 780px) {
+  .section__inicio .container__inicio .container__img img {
+    width: 18em;
+  }
+
+  .background__inicio {
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

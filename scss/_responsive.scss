@@ -1,0 +1,26 @@
+@media screen and (max-width: 991px){
+    .navbar__ul{
+        align-items: flex-end;
+        width: 100%;
+    }
+    .nav-item{
+        min-width: 100px;
+    }
+    .navbar__links{
+        margin-bottom: .5em;
+    }
+}
+@media screen and (max-width: 780px) {
+    .section__inicio{
+        .container__inicio{
+            .container__img{
+                img{
+                    width: 18em;
+                }
+            }
+        }
+    }
+    .background__inicio{
+        background-size: cover;
+    }
+}
