@@ -1,8 +1,14 @@
 .navbar{
     background: none;
-    position: absolute;
     width: 100%;
-    z-index: 10;
+    clear: both;
+    content:'';
+    position: fixed;
+    top: 0;
+    z-index: 95;
+}
+.navbar__background{
+    background-color: $color__salmon;
 }
 .navbar__containerLogo{
     width: 30%;

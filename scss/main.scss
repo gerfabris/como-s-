@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "navbar";
+@import "variables", "navbar", "carousel";
 *{
     margin: 0;
     padding: 0;
@@ -269,13 +269,11 @@ main{
 .section__testimonios{
     @include flex_column_center;
     width: 100%;
+    height: 100%;
     background-image: url("../assets/img/backgroundblue\ con\ puntos.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    .muestra{
-        width: 100%;
-        height: 500px;
-    }
+    min-height: 600px;
 }
 .section__curso{
     @include flex_column_center;

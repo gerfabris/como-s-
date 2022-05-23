@@ -4,9 +4,16 @@
 }
 .navbar {
   background: none;
-  position: absolute;
   width: 100%;
-  z-index: 10;
+  clear: both;
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: 95;
+}
+
+.navbar__background {
+  background-color: #F3444D;
 }
 
 .navbar__containerLogo {
@@ -42,6 +49,114 @@
 }
 .navbar__links:hover {
   box-shadow: 0px 4px 4px black;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  margin-top: 5%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+}
+
+.carousel {
+  padding: 1em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 70%;
+}
+.cards .cards__container__img {
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards .cards__container__img img {
+  width: 10em;
+}
+.cards .cards__container__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
+}
+.cards .cards__container__content .content__testimonio {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Raleway", sans-serif;
+  width: 85%;
+  text-align: left;
+  color: black;
+}
+.cards .cards__container__content .content__testimonio img {
+  position: absolute;
+  top: -15%;
+  left: -7%;
+  width: 30px;
+  height: 30px;
+}
+.cards .cards__container__content .content__name {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Raleway", sans-serif;
+  width: 85%;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+.cards .cards__container__content .content__name img {
+  margin-left: 0.5em;
+  width: 30px;
+  height: 30px;
 }
 
 * {
@@ -380,13 +495,11 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   background-image: url("../assets/img/backgroundblue con puntos.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-.section__testimonios .muestra {
-  width: 100%;
-  height: 500px;
+  min-height: 600px;
 }
 
 .section__curso {
