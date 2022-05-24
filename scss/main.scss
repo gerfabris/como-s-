@@ -30,6 +30,7 @@ header{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        z-index: 20;
         .container__img{
             width: 40%;
             margin-top: 5%;
