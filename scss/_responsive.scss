@@ -1,3 +1,17 @@
+@media screen and (max-width:1300px){
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__img{
+                margin-bottom: 5em;
+                margin-top: 5em;
+            }
+            .container__speach{
+                margin-top: 5em;
+            }
+        }
+    }    
+}
 @media screen and (max-width: 1100px) {
     //navbar
     .navbar__ul{
@@ -49,7 +63,7 @@
                         left: -10%;
                     }
                     .title{
-                        width: 100%
+                        width: 100%;
                     }
                     .star{
                         top: 0%;
@@ -59,26 +73,100 @@
             };
         }
     }
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__img{
+                margin-bottom: 0em;
+                margin-top: 0em;
+                img{
+                    margin-top: 4em;
+                    margin-bottom: 0em;
+                }
+            }
+            .container__speach{
+                width: 60%;
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+        //section curso
+        .section__curso{
+            .container__curso{
+                flex-direction: column;
+                .container__speach{
+                    width: 90%;
+                    .speach__title{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                    .speach__btn{
+                        margin-bottom: 2em;
+                    }
+                }
+                .container__cards{
+                    .cards{
+                        min-width: 18em;
+                    }
+                }
+            }
+        } 
 }
 
 @media screen and (max-width: 886px){
-        //section inicio
-        .section__inicio{
-            .container__inicio{
-                .container__speach{
-                    width: 70%;
-                    .speach__title{
-                        width: 80%;
-                        .comillas{
-                        }
-                        .title{
-                        }
-                        .star{
-                        }
-                    }
-                };
+    //section inicio
+    .section__inicio{
+        .container__inicio{
+            .container__speach{
+                width: 70%;
+                .speach__title{
+                    width: 80%;
+                }
+            };
+        }
+    }
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            flex-direction: column;
+            justify-content: center;
+            .container__img{
+                img{
+                    height: 30rem;
+                }
+            }
+            .container__speach{
+                width: 70%;
             }
         }
+    }
+    //footer
+    footer{
+        flex-direction: column;
+        .container__logoContacto{
+            margin-left: 0;
+            justify-content: center;
+            width: 95%;
+        }
+        .container__redes{
+            margin-top: 0%;
+            width: 95%;
+            .redes__title{
+                text-align: center;
+            }
+            .redes__links{
+                justify-content: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -94,6 +182,20 @@
     .background__inicio{
         background-size: cover;
     }
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__speach{
+                width: 90%;
+                .title{
+                    width: 90%;
+                }
+                .comillas{
+                    left: -5%;
+                }
+            }
+        }
+    }    
 }
 @media screen and (max-width: 520px) {
     .section__inicio{
@@ -103,6 +205,92 @@
             }
         }
     }
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__speach{
+                width: 95%;
+                .speach__title{
+                    margin-top: 2em;
+                    width: 100%;
+                    .title{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .comillas{
+                        left: -5%;
+                    }
+                }
+
+            }
+        }
+    }   
+    //section testimonios
+    .swiper {
+        margin-top: 8em;
+    }
+    .cards{
+        flex-direction: column;
+        .cards__container__img{
+            margin-left: 0;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .cards__container__content{
+            margin-bottom: 2em;
+        }
+    } 
+    .swiper-wrapper{
+        margin-bottom: 5em;
+    }
+    //section curso
+    .section__curso{
+        .container__curso{
+            .container__cards{
+                .cards{
+                    min-width: 16em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }       
+    //footer
+    footer{
+        .container__logoContacto{
+            margin-left: 0;
+            justify-content: center;
+            width: 95%;
+        }
+        .container__redes{
+            margin-top: 1em;
+            width: 95%;
+            .redes__links{
+                flex-direction: column;
+                a{
+                    justify-content: flex-start;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    //section quien soy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__speach{
+                width: 90%;
+                .speach__title{
+                    .star{
+                        top: -35%;
+                    }
+                    .comillas{
+                        left: -5%;
+                        top: -15%;                    }
+                }
+            }
+        }
+    }      
 }
 @media screen and (max-width: 330px) {
     .section__inicio{

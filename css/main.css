@@ -666,6 +666,15 @@ footer .container__redes .redes__links a img {
   margin-right: 0.5em;
 }
 
+@media screen and (max-width: 1300px) {
+  .section__quienSoy .container__quienSoy .container__img {
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+  .section__quienSoy .container__quienSoy .container__speach {
+    margin-top: 5em;
+  }
+}
 @media screen and (max-width: 1100px) {
   .navbar__ul {
     width: 90%;
@@ -728,6 +737,37 @@ footer .container__redes .redes__links a img {
     top: 0%;
     right: -10%;
   }
+
+  .section__quienSoy .container__quienSoy .container__img {
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+  .section__quienSoy .container__quienSoy .container__img img {
+    margin-top: 4em;
+    margin-bottom: 0em;
+  }
+  .section__quienSoy .container__quienSoy .container__speach {
+    width: 60%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .title {
+    text-align: center;
+  }
+
+  .section__curso .container__curso {
+    flex-direction: column;
+  }
+  .section__curso .container__curso .container__speach {
+    width: 90%;
+  }
+  .section__curso .container__curso .container__speach .speach__title h2 {
+    text-align: center;
+  }
+  .section__curso .container__curso .container__speach .speach__btn {
+    margin-bottom: 2em;
+  }
+  .section__curso .container__curso .container__cards .cards {
+    min-width: 18em;
+  }
 }
 @media screen and (max-width: 886px) {
   .section__inicio .container__inicio .container__speach {
@@ -735,6 +775,41 @@ footer .container__redes .redes__links a img {
   }
   .section__inicio .container__inicio .container__speach .speach__title {
     width: 80%;
+  }
+
+  .section__quienSoy .container__quienSoy {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section__quienSoy .container__quienSoy .container__img img {
+    height: 30rem;
+  }
+  .section__quienSoy .container__quienSoy .container__speach {
+    width: 70%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  footer .container__logoContacto {
+    margin-left: 0;
+    justify-content: center;
+    width: 95%;
+  }
+  footer .container__redes {
+    margin-top: 0%;
+    width: 95%;
+  }
+  footer .container__redes .redes__title {
+    text-align: center;
+  }
+  footer .container__redes .redes__links {
+    justify-content: center;
+  }
+  footer .container__redes .redes__links a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 }
 @media screen and (max-width: 780px) {
@@ -745,10 +820,89 @@ footer .container__redes .redes__links a img {
   .background__inicio {
     background-size: cover;
   }
+
+  .section__quienSoy .container__quienSoy .container__speach {
+    width: 90%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .title {
+    width: 90%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .comillas {
+    left: -5%;
+  }
 }
 @media screen and (max-width: 520px) {
   .section__inicio .container__inicio .container__speach {
     width: 100%;
+  }
+
+  .section__quienSoy .container__quienSoy .container__speach {
+    width: 95%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .speach__title {
+    margin-top: 2em;
+    width: 100%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .speach__title .title {
+    width: 100%;
+    text-align: center;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .speach__title .comillas {
+    left: -5%;
+  }
+
+  .swiper {
+    margin-top: 8em;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+  .cards .cards__container__img {
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .cards .cards__container__content {
+    margin-bottom: 2em;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 5em;
+  }
+
+  .section__curso .container__curso .container__cards .cards {
+    min-width: 16em;
+    margin-bottom: 2em;
+  }
+
+  footer .container__logoContacto {
+    margin-left: 0;
+    justify-content: center;
+    width: 95%;
+  }
+  footer .container__redes {
+    margin-top: 1em;
+    width: 95%;
+  }
+  footer .container__redes .redes__links {
+    flex-direction: column;
+  }
+  footer .container__redes .redes__links a {
+    justify-content: flex-start;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__quienSoy .container__quienSoy .container__speach {
+    width: 90%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .speach__title .star {
+    top: -35%;
+  }
+  .section__quienSoy .container__quienSoy .container__speach .speach__title .comillas {
+    left: -5%;
+    top: -15%;
   }
 }
 @media screen and (max-width: 330px) {
