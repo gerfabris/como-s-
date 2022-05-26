@@ -414,9 +414,8 @@ main {
   background-image: url("../assets/img/puntos naranjas.png");
   background-repeat: no-repeat;
   background-size: 9em;
-  justify-content: flex-start;
+  justify-content: center;
   background-position: right bottom;
-  justify-content: flex-start;
 }
 .section__experiencias .container__experiencias {
   display: flex;
@@ -443,15 +442,19 @@ main {
   left: -7%;
 }
 .section__experiencias .container__experiencias .container__img {
-  width: 40%;
+  width: 100%;
   height: 100%;
   margin-top: 2em;
+  max-width: 50rem;
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .section__experiencias .container__experiencias .container__img img {
   height: 100%;
+  width: 100%;
 }
 .section__experiencias .container__experiencias .container__speach {
   width: 70%;
@@ -466,7 +469,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 70%;
   position: relative;
   margin-top: 5em;
 }
@@ -477,17 +480,11 @@ main {
   font-family: "Lemon Milk";
   color: white;
   text-align: left;
-  width: 85%;
 }
 .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
   position: absolute;
   right: 15%;
   top: -50%;
-}
-.section__experiencias .container__experiencias .container__speach .speach__title .star {
-  position: absolute;
-  left: 0%;
-  top: -25%;
 }
 
 .section__testimonios {
@@ -690,6 +687,10 @@ footer .container__redes .redes__links a img {
     margin-left: 0;
     background-color: #F3444D;
   }
+
+  .section__experiencias .container__experiencias .container__speach .comillas {
+    right: 10%;
+  }
 }
 @media screen and (max-width: 991px) {
   .navbar__ul {
@@ -788,6 +789,13 @@ footer .container__redes .redes__links a img {
     width: 70%;
   }
 
+  .section__experiencias .container__experiencias .container__img {
+    max-width: 40em;
+  }
+  .section__experiencias .container__experiencias .container__speach .comillas {
+    right: 0%;
+  }
+
   footer {
     flex-direction: column;
   }
@@ -821,6 +829,9 @@ footer .container__redes .redes__links a img {
     background-size: cover;
   }
 
+  .section__quienSoy {
+    margin-bottom: 5em;
+  }
   .section__quienSoy .container__quienSoy .container__speach {
     width: 90%;
   }
@@ -829,6 +840,23 @@ footer .container__redes .redes__links a img {
   }
   .section__quienSoy .container__quienSoy .container__speach .comillas {
     left: -5%;
+  }
+
+  .section__experiencias {
+    margin-bottom: 5em;
+  }
+  .section__experiencias .bacground__experiencias {
+    width: 70%;
+    left: -40%;
+  }
+  .section__experiencias .container__experiencias .container__img {
+    max-width: 30em;
+  }
+  .section__experiencias .container__experiencias .container__speach {
+    width: 90%;
+  }
+  .section__experiencias .container__experiencias .container__speach .speach__title {
+    width: 100%;
   }
 }
 @media screen and (max-width: 520px) {
@@ -851,8 +879,18 @@ footer .container__redes .redes__links a img {
     left: -5%;
   }
 
+  .section__experiencias .container__experiencias .container__img {
+    max-width: none;
+    width: 90%;
+  }
+
+  .section__testimonios {
+    background-image: url("../assets/img/background blue.png");
+    background-size: cover;
+  }
+
   .swiper {
-    margin-top: 8em;
+    margin-top: 5em;
   }
 
   .cards {
