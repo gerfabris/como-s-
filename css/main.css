@@ -196,7 +196,7 @@ header .navbar {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  margin-top: 8em;
+  margin-top: 10em;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -265,7 +265,7 @@ header .navbar {
   align-items: center;
   justify-content: flex-start;
   margin-top: 1em;
-  margin-left: 1em;
+  width: 90%;
 }
 .section__inicio .container__inicio .container__speach .speach__btn .btn_border {
   min-width: 250px;
@@ -588,7 +588,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   margin-top: 1em;
-  margin-left: 1em;
+  width: 90%;
 }
 .section__curso .container__curso .container__speach .speach__btn .btn_border {
   min-width: 250px;
@@ -1037,6 +1037,10 @@ footer .container__redes .redes__links a img {
   .section__quienSoy .container__quienSoy .container__speach .speach__title .comillas {
     left: -5%;
     top: -15%;
+  }
+  .section__quienSoy .container__quienSoy .container__img img {
+    margin-top: 2em;
+    height: 16rem;
   }
 }
 @media screen and (max-width: 420px) {
