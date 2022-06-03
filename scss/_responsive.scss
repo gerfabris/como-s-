@@ -40,6 +40,17 @@
             }
         }
     }
+    //section curso
+    .section__curso{
+        .container__curso{
+            .container__cards{
+                width: 90%;
+                .cards{
+                    min-height: 22.5rem;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 991px){
     //navbar
@@ -66,6 +77,7 @@
                 margin-top: 2em;
                 @include flex_column_center;
                 width: 60%;
+                margin-bottom: 0;
                 .speach__title{
                     width: 80%;
                     .comillas{
@@ -85,8 +97,9 @@
     //section quien soy
     .section__quienSoy{
         .container__quienSoy{
+            justify-content: center;
             .container__img{
-                margin-bottom: 0em;
+                margin-bottom: 15em;
                 margin-top: 0em;
                 img{
                     margin-top: 4em;
@@ -94,6 +107,7 @@
                 }
             }
             .container__speach{
+                margin-bottom: 0;
                 width: 60%;
                 .title{
                     text-align: center;
@@ -214,7 +228,7 @@
     }
     //section quien soy
     .section__quienSoy{
-        margin-bottom: 5em;
+        margin-bottom: 0em;
         .container__quienSoy{
             .container__speach{
                 width: 90%;
@@ -230,9 +244,8 @@
     //section experiencias
     .section__experiencias{
         margin-bottom: 5em;
-        .bacground__experiencias{
-            width: 70%;
-            left: -40%;
+        .background__experiencias{
+            display: none;
         }
         .container__experiencias{
             .container__img{
@@ -242,16 +255,63 @@
                 width: 90%;
                 .speach__title{
                     width: 100%;
+                    .title{
+                        margin-right: .2em;
+                    }
+                    .comillas{
+                        right: 0%;
+                    }
                 }
             }
         }
-    }           
+    }    
+    footer{
+        .container__redes{
+            .redes__links {
+                flex-direction: column;
+            }
+        }
+    }        
+}
+@media screen and (max-width: 580px){
+    //section quienSoy
+    .section__quienSoy{
+        .container__quienSoy{
+            .container__img{
+                img{
+                    height: 20rem;
+                }
+            }
+        }
+    } 
+    //section experiencias
+    .section__experiencias{
+        .container__experiencias{
+            .container__speach{
+                .speach__title{
+                    .comillas{
+                        top: -20%;
+                        right: 15%;
+                    }
+                }
+            }
+        }
+    }   
 }
 @media screen and (max-width: 520px) {
     .section__inicio{
         .container__inicio{
             .container__speach{
                 width: 100%;
+                .speach__title{
+                    .star{
+                        right: -20%;
+                    }
+                    .comillas{
+                        left: -20%;
+                    }
+                }
+
             }
         }
     }
@@ -281,6 +341,9 @@
             .container__img{
                 max-width: none;
                 width: 90%;
+                iframe{
+                    min-height: 300px;
+                }
             }
         }
     }        
@@ -337,6 +400,20 @@
         }
     }
 }
+@media screen and (max-width: 500px){
+    //section experiencias
+    .section__experiencias{
+        .container__experiencias{
+            .container__speach{
+                .speach__title{
+                    .comillas{
+                        right: 0%;
+                    }
+                }
+            }
+        }
+    }   
+}
 @media screen and (max-width: 480px){
     //section quien soy
     .section__quienSoy{
@@ -354,6 +431,20 @@
             }
         }
     }      
+}
+@media screen and (max-width: 420px){
+    //section experiencias
+    .section__experiencias{
+        .container__experiencias{
+            .container__speach{
+                .speach__title{
+                    .comillas{
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }   
 }
 @media screen and (max-width: 330px) {
     .section__inicio{

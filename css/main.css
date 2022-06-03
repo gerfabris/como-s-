@@ -13,7 +13,7 @@
 }
 
 .navbar__background {
-  background-color: #F3444D;
+  background-color: #E31C54;
 }
 
 .navbar__containerLogo {
@@ -22,7 +22,7 @@
 }
 
 .navbar__containerLogo_img {
-  width: calc(5em + 5vw);
+  width: calc(7em + 7vw);
 }
 
 .navbar__container__links {
@@ -168,7 +168,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-display: swap;
   box-sizing: border-box;
-  background-color: #F3444D;
+  background-color: #E31C54;
   scroll-behavior: smooth;
 }
 
@@ -252,10 +252,12 @@ header .navbar {
   font-size: 28px;
   line-height: 32.87px;
   color: white;
-  text-shadow: 1px 1px black;
   width: 90%;
   text-align: left;
   margin-top: 1em;
+}
+.section__inicio .container__inicio .container__speach .speach__paragraph span {
+  font-weight: bold;
 }
 .section__inicio .container__inicio .container__speach .speach__btn {
   display: flex;
@@ -333,10 +335,13 @@ main {
   align-items: center;
 }
 .section__quienSoy .container__quienSoy .container__img img {
-  height: 36rem;
+  height: 30rem;
 }
 .section__quienSoy .container__quienSoy .container__speach {
   width: 55%;
+  margin-left: 2em;
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 .section__quienSoy .container__quienSoy .container__speach .speach__title {
   display: flex;
@@ -370,16 +375,21 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: #000000;
+  flex-direction: column;
 }
 .section__quienSoy .container__quienSoy .container__speach .speach__paragraph p {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
   line-height: 32.87px;
   color: white;
-  text-shadow: 1px 1px black;
   width: 90%;
   text-align: left;
   margin-top: 1em;
+  color: #000000;
+}
+.section__quienSoy .container__quienSoy .container__speach .speach__paragraph span {
+  font-weight: bold;
 }
 .section__quienSoy .container__quienSoy .container__speach .speach__btn {
   display: flex;
@@ -448,13 +458,20 @@ main {
 .section__experiencias .container__experiencias .container__img {
   width: 100%;
   height: 100%;
-  margin-top: 2em;
   max-width: 50rem;
   z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  min-height: 400px;
+  box-shadow: 10px 10px 1px #5F01D0;
+}
+.section__experiencias .container__experiencias .container__img iframe {
+  height: 100%;
+  width: 100%;
+  min-height: 400px;
+  border-bottom: 10px solid #5F01D0;
 }
 .section__experiencias .container__experiencias .container__img img {
   height: 100%;
@@ -462,10 +479,20 @@ main {
 }
 .section__experiencias .container__experiencias .container__speach {
   width: 70%;
-  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.section__experiencias .container__experiencias .container__speach p {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: 32.87px;
+  color: white;
+  width: 90%;
+  text-align: left;
+  margin-top: 1em;
+  text-align: center;
 }
 .section__experiencias .container__experiencias .container__speach .speach__title {
   display: flex;
@@ -475,7 +502,7 @@ main {
   text-align: center;
   width: 70%;
   position: relative;
-  margin-top: 5em;
+  margin-bottom: 2em;
 }
 .section__experiencias .container__experiencias .container__speach .speach__title .title {
   font-size: 36px;
@@ -487,7 +514,7 @@ main {
 }
 .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
   position: absolute;
-  right: 15%;
+  right: 5%;
   top: -50%;
 }
 
@@ -512,7 +539,7 @@ main {
   width: 100%;
   background-image: url("../assets/img/Rectangle 33.png");
   background-repeat: no-repeat;
-  background-size: 37rem;
+  background-size: 43rem;
   background-position: right;
 }
 .section__curso .container__curso {
@@ -548,10 +575,12 @@ main {
   font-size: 28px;
   line-height: 32.87px;
   color: white;
-  text-shadow: 1px 1px black;
   width: 90%;
   text-align: left;
   margin-top: 1em;
+}
+.section__curso .container__curso .container__speach .speach__paragraph span {
+  font-weight: bold;
 }
 .section__curso .container__curso .container__speach .speach__btn {
   display: flex;
@@ -614,10 +643,13 @@ main {
   margin-bottom: 0;
   text-align: justify;
 }
+.section__curso .container__curso .container__cards .cards span {
+  font-weight: bold;
+}
 
 footer {
   width: 100%;
-  background-image: url("../assets/img/back verde.png");
+  background-image: url("../assets/img/background__violeta.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -643,7 +675,7 @@ footer .container__redes {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 7em;
+  margin-top: 10em;
   margin-bottom: 5em;
 }
 footer .container__redes .redes__title {
@@ -666,7 +698,8 @@ footer .container__redes .redes__links {
 footer .container__redes .redes__links a {
   text-decoration: none;
   width: 45%;
-  color: black;
+  color: white;
+  font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -698,11 +731,18 @@ footer .container__redes .redes__links a img {
   }
   .section__inicio .container__inicio .container__speach {
     margin-left: 0;
-    background-color: #F3444D;
+    background-color: #E31C54;
   }
 
   .section__experiencias .container__experiencias .container__speach .comillas {
     right: 10%;
+  }
+
+  .section__curso .container__curso .container__cards {
+    width: 90%;
+  }
+  .section__curso .container__curso .container__cards .cards {
+    min-height: 22.5rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -737,6 +777,7 @@ footer .container__redes .redes__links a img {
     align-items: center;
     flex-direction: column;
     width: 60%;
+    margin-bottom: 0;
   }
   .section__inicio .container__inicio .container__speach .speach__title {
     width: 80%;
@@ -752,8 +793,11 @@ footer .container__redes .redes__links a img {
     right: -10%;
   }
 
+  .section__quienSoy .container__quienSoy {
+    justify-content: center;
+  }
   .section__quienSoy .container__quienSoy .container__img {
-    margin-bottom: 0em;
+    margin-bottom: 15em;
     margin-top: 0em;
   }
   .section__quienSoy .container__quienSoy .container__img img {
@@ -761,6 +805,7 @@ footer .container__redes .redes__links a img {
     margin-bottom: 0em;
   }
   .section__quienSoy .container__quienSoy .container__speach {
+    margin-bottom: 0;
     width: 60%;
   }
   .section__quienSoy .container__quienSoy .container__speach .title {
@@ -847,7 +892,7 @@ footer .container__redes .redes__links a img {
   }
 
   .section__quienSoy {
-    margin-bottom: 5em;
+    margin-bottom: 0em;
   }
   .section__quienSoy .container__quienSoy .container__speach {
     width: 90%;
@@ -862,9 +907,8 @@ footer .container__redes .redes__links a img {
   .section__experiencias {
     margin-bottom: 5em;
   }
-  .section__experiencias .bacground__experiencias {
-    width: 70%;
-    left: -40%;
+  .section__experiencias .background__experiencias {
+    display: none;
   }
   .section__experiencias .container__experiencias .container__img {
     max-width: 30em;
@@ -875,10 +919,36 @@ footer .container__redes .redes__links a img {
   .section__experiencias .container__experiencias .container__speach .speach__title {
     width: 100%;
   }
+  .section__experiencias .container__experiencias .container__speach .speach__title .title {
+    margin-right: 0.2em;
+  }
+  .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
+    right: 0%;
+  }
+
+  footer .container__redes .redes__links {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 580px) {
+  .section__quienSoy .container__quienSoy .container__img img {
+    height: 20rem;
+  }
+
+  .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
+    top: -20%;
+    right: 15%;
+  }
 }
 @media screen and (max-width: 520px) {
   .section__inicio .container__inicio .container__speach {
     width: 100%;
+  }
+  .section__inicio .container__inicio .container__speach .speach__title .star {
+    right: -20%;
+  }
+  .section__inicio .container__inicio .container__speach .speach__title .comillas {
+    left: -20%;
   }
 
   .section__quienSoy .container__quienSoy .container__speach {
@@ -899,6 +969,9 @@ footer .container__redes .redes__links a img {
   .section__experiencias .container__experiencias .container__img {
     max-width: none;
     width: 90%;
+  }
+  .section__experiencias .container__experiencias .container__img iframe {
+    min-height: 300px;
   }
 
   .section__testimonios {
@@ -948,6 +1021,11 @@ footer .container__redes .redes__links a img {
     width: 80%;
   }
 }
+@media screen and (max-width: 500px) {
+  .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
+    right: 0%;
+  }
+}
 @media screen and (max-width: 480px) {
   .section__quienSoy .container__quienSoy .container__speach {
     width: 90%;
@@ -958,6 +1036,11 @@ footer .container__redes .redes__links a img {
   .section__quienSoy .container__quienSoy .container__speach .speach__title .comillas {
     left: -5%;
     top: -15%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section__experiencias .container__experiencias .container__speach .speach__title .comillas {
+    right: -5%;
   }
 }
 @media screen and (max-width: 330px) {

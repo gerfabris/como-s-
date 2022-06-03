@@ -1,8 +1,9 @@
 //Paleta colores
-$color__salmon: #F3444D;
+$color__salmon: #E31C54;
 $color__naranja: #FBAB22;
 $color__violeta: #5F01D0;
 $color__celeste: #00AE9E;
+$color_salmon2: #F3444D;
 //Tipografía
 $tipografia__principal: 'Raleway', sans-serif;
 @font-face{
@@ -34,7 +35,7 @@ $tipografia_title: "Lemon Milk";
     font-size: 28px;
     line-height: 32.87px ;
     color: white;
-    text-shadow: 1px 1px black;
+    //text-shadow: 1px 1px black;
     width: 90%;
     text-align: left;
     margin-top: 1em;
