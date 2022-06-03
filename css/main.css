@@ -969,6 +969,7 @@ footer .container__redes .redes__links a img {
   .section__experiencias .container__experiencias .container__img {
     max-width: none;
     width: 90%;
+    min-height: 300px;
   }
   .section__experiencias .container__experiencias .container__img iframe {
     min-height: 300px;
