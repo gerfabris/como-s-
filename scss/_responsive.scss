@@ -42,6 +42,7 @@
     }
     //section curso
     .section__curso{
+        background-position: 100% 93%;  
         .container__curso{
             .container__cards{
                 width: 90%;
@@ -49,6 +50,11 @@
                     min-height: 22.5rem;
                 }
             }
+            .container__speach{
+                .speach__btn{
+                    margin-bottom: 2em;
+                }
+            }  
         }
     }
 }
@@ -178,7 +184,11 @@
                 }
             }
         }
-    }    
+    }  
+    //section curso
+    .section__curso{
+        background-position: 100% 90%;  
+    }
     //footer
     footer{
         flex-direction: column;

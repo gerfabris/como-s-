@@ -738,11 +738,17 @@ footer .container__redes .redes__links a img {
     right: 10%;
   }
 
+  .section__curso {
+    background-position: 100% 93%;
+  }
   .section__curso .container__curso .container__cards {
     width: 90%;
   }
   .section__curso .container__curso .container__cards .cards {
     min-height: 22.5rem;
+  }
+  .section__curso .container__curso .container__speach .speach__btn {
+    margin-bottom: 2em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -852,6 +858,10 @@ footer .container__redes .redes__links a img {
   }
   .section__experiencias .container__experiencias .container__speach .comillas {
     right: 0%;
+  }
+
+  .section__curso {
+    background-position: 100% 90%;
   }
 
   footer {
