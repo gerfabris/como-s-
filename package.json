@@ -1,0 +1,31 @@
+{
+  "name": "como-si",
+  "version": "1.0.0",
+  "description": "Pagina de taller de teatro para adultos mayores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerfabris/como-s-.git"
+  },
+  "keywords": [
+    "Adultos",
+    "mayores",
+    "teatro",
+    "taller",
+    "cursos",
+    "landing",
+    "pages",
+    "CSS",
+    "HTML",
+    "JS"
+  ],
+  "author": "Germán Fabris, Daniela Rosito\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C Florencia Gómez, Daniela Rosito UX UI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerfabris/como-s-/issues"
+  },
+  "homepage": "https://github.com/gerfabris/como-s-#readme"
+}
